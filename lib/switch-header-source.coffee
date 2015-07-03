@@ -6,7 +6,7 @@ module.exports =
   config:
     headerFileRegex:
       type: 'string'
-      default: '\\.h|\\.hpp|\\.hh|\\.hxx'
+      default: '\\.h|\\.hpp|\\.hh|\\.hxx|\\.cuh'
       title: 'Header file regular expression'
       description: """Regular expression used to identify "header" file
                       suffixes (matched at the end of the file name, remember
@@ -14,7 +14,7 @@ module.exports =
       order: 1
     definitionFileRegex:
       type: 'string'
-      default: '\\.[cC]|\\.cpp|\\.cc|\\.cxx|\\.m|\\.mm'
+      default: '\\.[cC]|\\.cpp|\\.cc|\\.cxx|\\.m|\\.mm|\\.cu'
       title: 'Definition file regular expression'
       description: """Regular expression used to identify "definition" file
                       suffixes (matched at the end of the file name, remember
